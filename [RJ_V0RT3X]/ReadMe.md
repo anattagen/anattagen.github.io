@@ -1,0 +1,170 @@
+﻿# But, why???
+
+## 3 Reasons:
+
+**1.** Removing a Mickey Mouse sticker bricked the device and voided the repair warranty 
+
+**2.** Steam has no gaemz
+
+**3.** DRM / Malware concerns require *"unofficial patches"*
+
+## Benfits:
+
+**[+]** Offers a pre-configurated, self-contained portable environment for each game.
+
+**[+]** Granular options with precise and individuated controls to customize joystick mappings, monitor layouts, audio outputs and more.
+
+**[+]** Leverages native Windows shortcuts and languages for backwards compatibility.
+
+**[+]** Executable identification, release/build versions, group-naemz and other extranious title abberations are intelligently handled to derive titles set by the publisher and the steam-database enables further metadata aqiuisition key to portability between computers, drives, and gaming-frontends.
+
+## Use Case
+
+Creates a specialized launcher and profile-folder (jacket) for each game which houses the game's shortcut/s and isolates settings such as
+ keyboad-mapping and monitor layout.  Tools which automate the process of creating and loading presets for devices, games and settings at 
+ a granular level are downloaded and installed from directly within the program.
+
+Antimicro/X, Xpadder, JoyXoff, Joy2Key keymappers are supported.
+
+
+## Installation
+- This Version: **0.99.92.58**
+
+- This Build: **2024-01-02 12:38 AM**
+
+Run the installer or extract the binary to a location of your choice, **or** download and build and run the source files and executables.
+```sh
+v0rt3X
+
+			├──  bin
+			│   ├──  aria2c.exe
+			│   ├──  7za.exe
+			│   ├──  lrDeploy.exe
+			│   ├──  NewOSK.exe
+			│   ├──  Setup.exe
+			│   ├──  SkinHu.dll
+			│   ├──  Source_Builder.exe
+			│   ├──  Update.exe
+			│   ├──  USkin.dll
+			│   └──  v0rt3X.exe
+			│
+			├──  site
+			│   ├──  AnkaCoder_b.otf
+			│   ├──  index.html
+			│   ├──  InterUI.html
+			│   ├──  Hermit-Regular.otf
+			│   ├──  key.ico
+			│   ├──  ReadMe.md
+			│   ├──  TruenoLt.otf
+			│   ├──  version.txt
+			│	└──  img
+			│       ├──  Install.png
+			│       ├──  key.png
+			│       ├──  runas.png
+			│       ├──  Setup.png
+			│       ├──  Tip.png
+			│       └──  Update.png
+			│
+			├──  src
+			│   ├──  absol.set
+			│   ├──  am_Blank.set
+			│   ├──  am_GameTemplate.set
+			│   ├──  am_KBM_Template.set
+			│   ├──  am_DesktopTemplate.set
+			│   ├──  am_Trigger.set
+			│   ├──  ax_Blank.set
+			│   ├──  ax_KBM_Template.set
+			│   ├──  ax_GameTemplate.set
+			│   ├──  ax_DesktopTemplate.set
+			│   ├──  ax_Trigger.set
+			│   ├──  build.ahk
+			│   ├──  Buildtools.set
+			│   ├──  cmdtemplate.set
+			│   ├──  DarkMode.mssytles
+			│   ├──  DarkMode.she
+			│   ├──  Deploy.ico
+			│   ├──  exclfnms.set
+			│   ├──  exez.set
+			│   ├──  Install.ico
+			│   ├──  jk_GameTemplate.set
+			│   ├──  jk_DestktopTemplate.set
+			│   ├──  jk_Trigger.set
+			│   ├──  ks_Blank.set
+			│   ├──  ks_GameTemplate.set
+			│   ├──  ks_DesktopTemplate.set
+			│   ├──  ks_Trigger.set
+			│   ├──  Joystick.ico
+			│   ├──  jkvtx.ahk
+			│   ├──  LightMode.msstyles
+			│   ├──  LightMode.she
+			│   ├──  lrDeploy.ahk
+			│   ├──  lrDeploy.set
+			│   ├──  newosk.ahk
+			│   ├──  NewOSK.ico
+			│   ├──  ox_DesktopTemplate.set
+			│   ├──  ox_GameTemplate.set
+			│   ├──  ox_Trigger.set
+			│   ├──  rabsol.set
+			│   ├──  readme.set
+			│   ├──  repos.set
+			│   ├──  RJDB.set
+			│   ├──  rlsgrps.set
+			│   ├──  Run.ico
+			│   ├──  Setup.ico
+			│   ├──  Setup.ahk
+			│   ├──  Source_Builder.ico
+			│   ├──  steam.json
+			│   ├──  unlike.set
+			│   ├──  unsel.set
+			│   ├──  Update.ahk
+			│   ├──  v0rt3X.ahk
+			│   ├──  xp_GameTemplate.set
+			│   ├──  xp_DesktopTemplate.set
+			│   └──  xp_Trigger.set
+			│
+			└──  README.md
+```
+# Documentation
+
+[Detailed Docs can be found here](https://oldtools.github.io/v0rt3X)
+
+# Setup
+
+Setup (bin\Setup.exe) configures v0rt3X. Initializing the tool will index your drives for common game-installation folders.  A lookup-table will be indexed from the included steampowered-database only the first time.
+
+Steam and other digital-delivery providers' libraries detected will be **excluded** from populating amonsgt new derived libraries unless specified in the "distributor-services" dropdown menu.
+
+Use the "SRC" button to add a folder/s where games have been installed. EG: C:\Games, or C:\Program Files
+
+Use the "OUT" button to set the location for launcher-shortcuts.
+
+The "GPD" button will set the location where profile folders for each game will be kept.
+
+Right-Click on the buttons in the setup tool to download supported executables.
+
+![Setup](https://oldtools.github.io/v0rt3X/img/Setup.png)
+
+
+
+![Config](https://oldtools.github.io/v0rt3X/img/Config.png)
+
+## Launching Games
+It is not necessary, but recommended to enable the RunAsAdmin option.
+Ideally, v0rt3X can run entirely in userspace, however many games require administrator access where user-level hardware is unavailable or unreliable.
+
+![AsAdmin](https://oldtools.github.io/v0rt3X/img/runas.png)
+
+During gameplay you may modify and/or create additional joystick profiles and any found within the game's jacket will be saved and reloaded for player 2/3/4, prioritizing the default profile-name eg: game-name/_#.gamecontroller.amgp, and other "player#" monikers.)
+
+# W.I.P/To Do
+
+Configuration, save and save-state locations are written to the Game.ini, however Cloud-Backup of Game-Saves and Game-Configuration files is a work in progress.  
+
+I will likely end up adopting an open sourced file-sync service application. 
+
+
+# Building or compiling from source
+
+The lrdeploy.exe file will compile and deploy v0rt3X project source files and website to github.
+
+Included with the binary installer and portable versions are 7za.exe and aria2c.exe, both of which are required for v0rt3X to operate properly.
